@@ -1,0 +1,32 @@
+/* === BASE === */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+}
+
+/* Headings use Poppins */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: var(--color-primary);
+}

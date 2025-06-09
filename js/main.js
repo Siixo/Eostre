@@ -1,8 +1,10 @@
-const container = document.querySelector(".container");
-const toggleBtn = document.querySelector(".toggleBtn");
+export function initSidebar() {
+  const sidebar = document.querySelector(".sidebar-placeholder");
+  const toggleButton = document.getElementById("toggleBtn");
 
-container.classList.add("collapsed");
-
-toggleBtn.addEventListener("click", () => {
-  container.classList.toggle("collapsed");
-});
+  if (sidebar && toggleButton) {
+    toggleButton.addEventListener("click", () => {
+      sidebar.classList.toggle("expanded");
+    });
+  }
+}

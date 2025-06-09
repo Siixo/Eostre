@@ -1,0 +1,12 @@
+/* === TOKYO NIGHT DARK PALETTE === */
+:root {
+  --color-bg: #1a1b26;
+  --color-surface: #24283b;
+  --color-border: #414868;
+
+  --color-primary: #7aa2f7;
+  --color-accent: #9ece6a;
+
+  --color-text-primary: #c0caf5;
+  --color-text-secondary: #a9b1d6;
+}

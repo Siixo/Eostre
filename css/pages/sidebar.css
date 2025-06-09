@@ -1,0 +1,121 @@
+/* === Base Reset === */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Sidebar Container === */
+.sidebarContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 80px;
+  background-color: var(--color-surface);
+  transition: width 0.3s ease;
+}
+
+.sidebar-placeholder.expanded .sidebarContainer {
+  width: 200px;
+}
+
+/* === Sidebar Inner Content === */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-text-primary);
+  margin-top: 20px;
+  gap: 20px;
+}
+
+/* === Navigation Items === */
+.nav_item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 15px;
+}
+
+.sidebarContainer:not(.expanded) .nav_item {
+  padding-left: calc((80px - 24px) / 2);
+}
+
+/* === Icon Wrapper === */
+.nav_icon {
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* === Icons === */
+.fa-solid,
+.fa-brands {
+  font-size: 2rem;
+  color: var(--color-text-primary);
+}
+
+/* === Labels === */
+.nav_label {
+  display: none;
+  margin-left: 15px;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar-placeholder.expanded .nav_label {
+  display: inline-block;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* === Social Links === */
+.socialsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  gap: 20px;
+  border-top: 1px solid white;
+  padding: 10px 0;
+  background-color: black;
+}
+.fa-bars,
+#menu {
+  color: black;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .sidebarContainer {
+    width: 60px;
+  }
+
+  .sidebar-placeholder.expanded .sidebarContainer {
+    width: 180px;
+  }
+
+  .sidebarContainer:not(.expanded) .nav_item {
+    padding-left: calc((60px - 24px) / 2);
+  }
+
+  .nav_label {
+    font-size: 0.9rem;
+  }
+
+  .fa-solid,
+  .fa-brands {
+    font-size: 1.5rem;
+  }
+}

@@ -4,51 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eostre</title>
-    <link rel="stylesheet" href="css/main.css" />
     <script
       src="https://kit.fontawesome.com/d192b81991.js"
       crossorigin="anonymous"
     ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script defer src="js/main.js"></script>
+
+    <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
-    <container class="container">
-      <div class="sidebar" id="sidebar">
-        <button class="toggleBtn" type="button">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+    <div class="sidebar-placeholder"></div>
 
-        <a href="#" class="nav_item">
-          <i class="fa-solid fa-folder-open"></i>
-          <span class="nav_label">Projets</span>
-        </a>
-
-        <a href="#" class="nav_item">
-          <i class="fa-solid fa-box-archive"></i>
-          <span class="nav_label">Archive</span>
-        </a>
-
-        <a href="#" class="nav_item">
-          <i class="fa-solid fa-gear"></i>
-          <span class="nav_label">Réglages</span>
-        </a>
+    <section class="page_container">
+      <div class="page">
+        <div class="card">
+          <div class="card_header">
+            <h1 class="card_title">Projet #1</h1>
+            <h2 class="card_subtitle">Sous-titre</h2>
+            <p class="card_text">Lorem ipseum</p>
+            <button class="button-primary">
+              <a href="#" class="card_link">Voir le projet</a>
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_header">
+            <h1 class="card_title">Projet #1</h1>
+            <h2 class="card_subtitle">Sous-titre</h2>
+            <p class="card_text">Lorem ipseum</p>
+            <button class="button-primary">
+              <a href="#" class="card_link">Voir le projet</a>
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_header">
+            <h1 class="card_title">Projet #1</h1>
+            <h2 class="card_subtitle">Sous-titre</h2>
+            <p class="card_text">Lorem ipseum</p>
+            <button class="button-primary">
+              <a href="#" class="card_link">Voir le projet</a>
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="socialsContainer">
-        <a href="#" class="socials">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="#" class="socials">
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-        <a href="#" class="socials">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-      </div>
-    </container>
+    </section>
+    <script type="module" src="js/main.js" defer></script>
+    <script type="module" src="js/sidebar.js" defer></script>
   </body>
 </html>
